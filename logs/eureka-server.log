@@ -1,0 +1,111 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:eureka-server >----------------------
+[INFO] Building eureka-server 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.0:run (default-cli) > test-compile @ eureka-server >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ eureka-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ eureka-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ eureka-server ---
+[INFO] skip non existing resourceDirectory /home/kavy/Documents/CampusTrace/eureka-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ eureka-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.1.0:run (default-cli) < test-compile @ eureka-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.0:run (default-cli) @ eureka-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-10T12:49:15.901+05:30  INFO 112057 --- [eureka-server] [           main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 17.0.19 with PID 112057 (/home/kavy/Documents/CampusTrace/eureka-server/target/classes started by kavy in /home/kavy/Documents/CampusTrace/eureka-server)
+2026-07-10T12:49:15.904+05:30  INFO 112057 --- [eureka-server] [           main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-07-10T12:49:16.481+05:30  INFO 112057 --- [eureka-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce6861d0-2215-39b4-bfec-0627b3bd3a1e
+2026-07-10T12:49:16.648+05:30  INFO 112057 --- [eureka-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-07-10T12:49:16.656+05:30  INFO 112057 --- [eureka-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-10T12:49:16.656+05:30  INFO 112057 --- [eureka-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-10T12:49:16.690+05:30  INFO 112057 --- [eureka-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 745 ms
+2026-07-10T12:49:17.220+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-07-10T12:49:17.221+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-07-10T12:49:17.345+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-07-10T12:49:17.345+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-07-10T12:49:17.431+05:30  INFO 112057 --- [eureka-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-07-10T12:49:17.801+05:30  WARN 112057 --- [eureka-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-10T12:49:17.813+05:30  INFO 112057 --- [eureka-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-07-10T12:49:17.824+05:30  INFO 112057 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-07-10T12:49:17.824+05:30  INFO 112057 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-07-10T12:49:17.826+05:30  INFO 112057 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783667957825 with initial instances count: 0
+2026-07-10T12:49:17.848+05:30  INFO 112057 --- [eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-07-10T12:49:17.849+05:30  INFO 112057 --- [eureka-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-07-10T12:49:17.925+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-07-10T12:49:17.925+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-07-10T12:49:17.925+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-07-10T12:49:17.925+05:30  INFO 112057 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-07-10T12:49:17.948+05:30  INFO 112057 --- [eureka-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-07-10T12:49:17.953+05:30  INFO 112057 --- [eureka-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-07-10T12:49:17.953+05:30  INFO 112057 --- [eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-07-10T12:49:17.958+05:30  INFO 112057 --- [eureka-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-10T12:49:17.990+05:30  INFO 112057 --- [eureka-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2026-07-10T12:49:17.997+05:30  INFO 112057 --- [eureka-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-07-10T12:49:17.997+05:30  INFO 112057 --- [eureka-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-07-10T12:49:17.997+05:30  INFO 112057 --- [eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-07-10T12:49:17.997+05:30  INFO 112057 --- [eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-07-10T12:49:17.997+05:30  INFO 112057 --- [eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-07-10T12:49:17.999+05:30  INFO 112057 --- [eureka-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-07-10T12:49:18.003+05:30  INFO 112057 --- [eureka-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-07-10T12:49:18.004+05:30  INFO 112057 --- [eureka-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-07-10T12:49:18.015+05:30  INFO 112057 --- [eureka-server] [           main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 2.428 seconds (process running for 2.756)
+2026-07-10T12:49:42.737+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-10T12:49:42.738+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-10T12:49:42.739+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-10T12:49:43.063+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTIFICATION-SERVICE/10.35.42.174:notification-service:8085 with status UP (replication=false)
+2026-07-10T12:49:43.090+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLAIM-SERVICE/10.35.42.174:claim-service:8084 with status UP (replication=false)
+2026-07-10T12:49:43.155+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/KavyPC:user-service:8081 with status UP (replication=false)
+2026-07-10T12:49:43.452+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOST-ITEM-SERVICE/10.35.42.174:lost-item-service:8082 with status UP (replication=false)
+2026-07-10T12:49:43.579+05:30  INFO 112057 --- [eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance FOUND-ITEM-SERVICE/10.35.42.174:found-item-service:8083 with status UP (replication=false)
+2026-07-10T12:49:43.662+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTIFICATION-SERVICE/10.35.42.174:notification-service:8085 with status UP (replication=true)
+2026-07-10T12:49:43.662+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLAIM-SERVICE/10.35.42.174:claim-service:8084 with status UP (replication=true)
+2026-07-10T12:49:43.663+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/KavyPC:user-service:8081 with status UP (replication=true)
+2026-07-10T12:49:43.663+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOST-ITEM-SERVICE/10.35.42.174:lost-item-service:8082 with status UP (replication=true)
+2026-07-10T12:49:44.083+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance FOUND-ITEM-SERVICE/10.35.42.174:found-item-service:8083 with status UP (replication=true)
+2026-07-10T12:49:56.308+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.35.42.174:api-gateway:8080 with status UP (replication=false)
+2026-07-10T12:49:56.823+05:30  INFO 112057 --- [eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.35.42.174:api-gateway:8080 with status UP (replication=true)
+2026-07-10T12:50:17.998+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:51:17.998+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:52:17.998+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:53:17.998+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:54:17.998+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:55:17.999+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T12:56:17.999+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:33:51.559+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:34:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:35:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:36:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:37:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:38:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:39:51.561+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:40:51.514+05:30  INFO 112057 --- [eureka-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 11
+2026-07-10T13:40:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:41:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:42:51.560+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:43:51.561+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:44:51.561+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:45:51.562+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T13:46:51.562+05:30  INFO 112057 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

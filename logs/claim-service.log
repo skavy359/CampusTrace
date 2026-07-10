@@ -1,0 +1,132 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:claim-service >----------------------
+[INFO] Building claim-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.0:run (default-cli) > test-compile @ claim-service >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ claim-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ claim-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ claim-service ---
+[INFO] skip non existing resourceDirectory /home/kavy/Documents/CampusTrace/claim-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ claim-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.1.0:run (default-cli) < test-compile @ claim-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.0:run (default-cli) @ claim-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-10T12:49:36.203+05:30  INFO 113196 --- [claim-service] [           main] c.e.c.ClaimServiceApplication            : Starting ClaimServiceApplication using Java 17.0.19 with PID 113196 (/home/kavy/Documents/CampusTrace/claim-service/target/classes started by kavy in /home/kavy/Documents/CampusTrace/claim-service)
+2026-07-10T12:49:36.213+05:30  INFO 113196 --- [claim-service] [           main] c.e.c.ClaimServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-07-10T12:49:37.439+05:30  INFO 113196 --- [claim-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-10T12:49:37.651+05:30  INFO 113196 --- [claim-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 1 JPA repository interface.
+2026-07-10T12:49:38.140+05:30  INFO 113196 --- [claim-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d3b61c7f-74ca-3120-bd15-00021cf4cde3
+2026-07-10T12:49:38.800+05:30  INFO 113196 --- [claim-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-07-10T12:49:38.813+05:30  INFO 113196 --- [claim-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-10T12:49:38.814+05:30  INFO 113196 --- [claim-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-10T12:49:38.871+05:30  INFO 113196 --- [claim-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2563 ms
+2026-07-10T12:49:39.288+05:30  INFO 113196 --- [claim-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-10T12:49:39.339+05:30  INFO 113196 --- [claim-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-10T12:49:39.767+05:30  INFO 113196 --- [claim-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-10T12:49:39.790+05:30  INFO 113196 --- [claim-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-10T12:49:39.933+05:30  INFO 113196 --- [claim-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:claimdb user=SA
+2026-07-10T12:49:39.934+05:30  INFO 113196 --- [claim-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-10T12:49:39.959+05:30  WARN 113196 --- [claim-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-10T12:49:39.978+05:30  INFO 113196 --- [claim-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:claimdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CLAIMDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-10T12:49:40.762+05:30  INFO 113196 --- [claim-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table claims (id bigint generated by default as identity, claimed_by varchar(255) not null, created_at timestamp(6) not null, description varchar(500), item_id bigint not null, item_type varchar(255) not null, proof_of_ownership varchar(500), status varchar(255) not null, updated_at timestamp(6), primary key (id))
+2026-07-10T12:49:40.837+05:30  INFO 113196 --- [claim-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-10T12:49:41.076+05:30  INFO 113196 --- [claim-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-10T12:49:41.413+05:30  WARN 113196 --- [claim-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-10T12:49:41.583+05:30  WARN 113196 --- [claim-service] [           main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a9845cd3-cac8-478b-b5a8-d8f6b6d55390
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-10T12:49:41.590+05:30  INFO 113196 --- [claim-service] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-10T12:49:42.525+05:30  INFO 113196 --- [claim-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-07-10T12:49:42.594+05:30  WARN 113196 --- [claim-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-10T12:49:42.603+05:30  INFO 113196 --- [claim-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-07-10T12:49:42.681+05:30  INFO 113196 --- [claim-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-07-10T12:49:42.702+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-07-10T12:49:42.704+05:30  INFO 113196 --- [claim-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-07-10T12:49:42.712+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-07-10T12:49:42.712+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-07-10T12:49:42.713+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-07-10T12:49:42.713+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-07-10T12:49:42.713+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-07-10T12:49:42.713+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-07-10T12:49:42.713+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-07-10T12:49:43.042+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-07-10T12:49:43.043+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-07-10T12:49:43.045+05:30  INFO 113196 --- [claim-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-10T12:49:43.047+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783667983046 with initial instances count: 0
+2026-07-10T12:49:43.054+05:30  INFO 113196 --- [claim-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLAIM-SERVICE with eureka with status UP
+2026-07-10T12:49:43.055+05:30  INFO 113196 --- [claim-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1783667983055, current=UP, previous=STARTING]
+2026-07-10T12:49:43.056+05:30  INFO 113196 --- [claim-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLAIM-SERVICE/10.35.42.174:claim-service:8084: registering service...
+2026-07-10T12:49:43.069+05:30  INFO 113196 --- [claim-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-07-10T12:49:43.070+05:30  INFO 113196 --- [claim-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-07-10T12:49:43.092+05:30  INFO 113196 --- [claim-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLAIM-SERVICE/10.35.42.174:claim-service:8084 - registration status: 204
+2026-07-10T12:49:43.092+05:30  INFO 113196 --- [claim-service] [           main] c.e.c.ClaimServiceApplication            : Started ClaimServiceApplication in 7.572 seconds (process running for 8.151)
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-07-10T12:50:13.044+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-07-10T12:50:13.056+05:30  INFO 113196 --- [claim-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-07-10T12:53:06.864+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-10T12:53:06.865+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-10T12:53:06.867+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-10T12:53:06.977+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] c.e.claimservice.aop.LoggingAspect       : API Called: com.example.claimservice.controller.ClaimController.getAllClaims()
+Hibernate: select c1_0.id,c1_0.claimed_by,c1_0.created_at,c1_0.description,c1_0.item_id,c1_0.item_type,c1_0.proof_of_ownership,c1_0.status,c1_0.updated_at from claims c1_0
+2026-07-10T12:53:07.107+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.service.ClaimService.getAllClaims() executed in 130 ms
+2026-07-10T12:53:07.107+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-1] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.controller.ClaimController.getAllClaims() executed in 130 ms
+2026-07-10T12:54:00.244+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-2] c.e.claimservice.aop.LoggingAspect       : API Called: com.example.claimservice.controller.ClaimController.getAllClaims()
+Hibernate: select c1_0.id,c1_0.claimed_by,c1_0.created_at,c1_0.description,c1_0.item_id,c1_0.item_type,c1_0.proof_of_ownership,c1_0.status,c1_0.updated_at from claims c1_0
+2026-07-10T12:54:00.247+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-2] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.service.ClaimService.getAllClaims() executed in 3 ms
+2026-07-10T12:54:00.247+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-2] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.controller.ClaimController.getAllClaims() executed in 3 ms
+2026-07-10T12:54:42.715+05:30  INFO 113196 --- [claim-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-07-10T13:36:16.276+05:30  INFO 113196 --- [claim-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-07-10T13:38:05.651+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-4] c.e.claimservice.aop.LoggingAspect       : API Called: com.example.claimservice.controller.ClaimController.getAllClaims()
+Hibernate: select c1_0.id,c1_0.claimed_by,c1_0.created_at,c1_0.description,c1_0.item_id,c1_0.item_type,c1_0.proof_of_ownership,c1_0.status,c1_0.updated_at from claims c1_0
+2026-07-10T13:38:05.654+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-4] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.service.ClaimService.getAllClaims() executed in 3 ms
+2026-07-10T13:38:05.654+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-4] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.controller.ClaimController.getAllClaims() executed in 3 ms
+2026-07-10T13:38:41.331+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-5] c.e.claimservice.aop.LoggingAspect       : API Called: com.example.claimservice.controller.ClaimController.getAllClaims()
+Hibernate: select c1_0.id,c1_0.claimed_by,c1_0.created_at,c1_0.description,c1_0.item_id,c1_0.item_type,c1_0.proof_of_ownership,c1_0.status,c1_0.updated_at from claims c1_0
+2026-07-10T13:38:41.334+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-5] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.service.ClaimService.getAllClaims() executed in 3 ms
+2026-07-10T13:38:41.335+05:30  INFO 113196 --- [claim-service] [nio-8084-exec-5] c.e.claimservice.aop.LoggingAspect       : Method com.example.claimservice.controller.ClaimController.getAllClaims() executed in 4 ms
+2026-07-10T13:41:16.276+05:30  INFO 113196 --- [claim-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-07-10T13:46:16.277+05:30  INFO 113196 --- [claim-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
