@@ -13,7 +13,7 @@ This project strictly adheres to a Spring Cloud Microservices architecture using
 *   **Found Item Service (`found-item-service`)**: Manages the CRUD operations for items found around campus.
 *   **Claim Service (`claim-service`)**: Handles the submission and administrative approval/rejection of claims for items.
 *   **Notification Service (`notification-service`)**: A lightweight service that logs system notifications for users (e.g., claim status updates).
-
+ 
 ## Technologies Used
 
 *   **Backend:** Java 17, Spring Boot 3, Spring Web, Spring Data JPA, Hibernate, Spring Security, JWT, OpenFeign, Bean Validation, AspectJ (AOP).
